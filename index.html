@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Zuvox Creation | Global Garment Manufacturer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Zuvox Creation – Global garment manufacturer & wholesaler for bulk orders (100+ MOQ).">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+<!-- ================= HEADER ================= -->
+<header class="bg-white shadow sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+    <div class="flex items-center space-x-3">
+      <img src="logo.png" class="h-10" alt="Zuvox Logo">
+      <div>
+        <h1 class="text-xl font-bold">ZUVOX CREATION</h1>
+        <p class="text-sm text-gray-500" id="tagline"></p>
+      </div>
+    </div>
+    <a id="whatsappHeader" target="_blank" class="text-green-600 text-3xl">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="bg-black text-white text-center py-24 px-4">
+  <h2 id="headline" class="text-4xl md:text-5xl font-bold mb-6"></h2>
+  <p id="subheadline" class="max-w-2xl mx-auto text-lg text-gray-300 mb-10"></p>
+  <a id="whatsappMain" target="_blank"
+     class="inline-block bg-green-600 hover:bg-green-700 px-10 py-4 rounded-full text-lg font-semibold">
+    <i class="fab fa-whatsapp mr-2"></i><span id="ctaText"></span>
+  </a>
+</section>
+
+<!-- ================= TRUST ================= -->
+<section class="bg-white py-16">
+  <div class="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-5 gap-6 text-center text-sm font-semibold">
+    <div>🏭 Manufacturer</div>
+    <div>📦 MOQ 100+</div>
+    <div>🌍 Global Supply</div>
+    <div>🧵 Export Quality</div>
+    <div>🏷️ Private Label</div>
+  </div>
+</section>
+
+<!-- ================= PRODUCTS ================= -->
+<section class="bg-gray-100 py-20">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 id="productsTitle" class="text-3xl font-bold text-center mb-12"></h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+
+      <!-- PRODUCT -->
+      <div class="bg-white rounded-xl shadow overflow-hidden">
+        <img src="products/mens-shirt.jpg" class="h-56 w-full object-cover">
+        <div class="p-4">
+          <h3 class="font-bold">Men’s Cotton Shirt</h3>
+          <p class="text-sm text-gray-600">MOQ: 100 pcs</p>
+          <a class="productWA block mt-4 text-center bg-green-600 hover:bg-green-700 text-white py-2 rounded"
+             data-product="Men’s Cotton Shirt"></a>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow overflow-hidden">
+        <img src="products/kurta.jpg" class="h-56 w-full object-cover">
+        <div class="p-4">
+          <h3 class="font-bold">Men’s Kurta</h3>
+          <p class="text-sm text-gray-600">MOQ: 100 pcs</p>
+          <a class="productWA block mt-4 text-center bg-green-600 hover:bg-green-700 text-white py-2 rounded"
+             data-product="Men’s Kurta"></a>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow overflow-hidden">
+        <img src="products/abaya.jpg" class="h-56 w-full object-cover">
+        <div class="p-4">
+          <h3 class="font-bold">Women’s Abaya</h3>
+          <p class="text-sm text-gray-600">MOQ: 100 pcs</p>
+          <a class="productWA block mt-4 text-center bg-green-600 hover:bg-green-700 text-white py-2 rounded"
+             data-product="Women’s Abaya"></a>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow overflow-hidden">
+        <img src="products/tshirt.jpg" class="h-56 w-full object-cover">
+        <div class="p-4">
+          <h3 class="font-bold">Custom T-Shirts</h3>
+          <p class="text-sm text-gray-600">MOQ: 100 pcs</p>
+          <a class="productWA block mt-4 text-center bg-green-600 hover:bg-green-700 text-white py-2 rounded"
+             data-product="Custom T-Shirts"></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="bg-white py-20 text-center px-4">
+  <h3 id="aboutTitle" class="text-3xl font-bold mb-6"></h3>
+  <p id="aboutText" class="max-w-3xl mx-auto text-gray-600 text-lg"></p>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-black text-gray-400 py-12 text-center text-sm">
+  <img src="logo.png" class="h-10 mx-auto mb-4">
+  <p>Bulk Orders Only • MOQ 100+</p>
+  <p class="mt-2">&copy; 2025 Zuvox Creation</p>
+</footer>
+
+<!-- ================= LANGUAGE + WHATSAPP ================= -->
+<script>
+const lang = navigator.language || navigator.userLanguage;
+
+const data = {
+  en: {
+    tagline:"Manufacturer & Global Wholesaler",
+    headline:"Global Garment Manufacturer for Bulk Orders",
+    sub:"Export-quality garments for wholesalers worldwide (MOQ 100+)",
+    cta:"Bulk Order on WhatsApp",
+    products:"Our Wholesale Products",
+    aboutTitle:"About Zuvox Creation",
+    about:"We are a garment manufacturing company supplying bulk orders only to wholesalers, importers and brands worldwide.",
+    msg:(p)=>`Hello Zuvox Creation, I am interested in bulk order (100+ MOQ) for ${p}. Please share details.`
+  },
+  ar: {
+    tagline:"مصنع وتاجر جملة عالمي",
+    headline:"مصنع ملابس عالمي للطلبات بالجملة",
+    sub:"توريد ملابس عالية الجودة للتجار حول العالم (100 قطعة كحد أدنى)",
+    cta:"طلب بالجملة عبر واتساب",
+    products:"منتجات الجملة",
+    aboutTitle:"عن Zuvox Creation",
+    about:"نحن شركة تصنيع ملابس متخصصة في الطلبات بالجملة فقط للأسواق العالمية.",
+    msg:(p)=>`مرحباً Zuvox Creation، أنا مهتم بطلب ${p} بالجملة (100 قطعة فأكثر).`
+  }
+};
+
+const c = lang.startsWith("ar") ? data.ar : data.en;
+
+document.getElementById("tagline").innerText = c.tagline;
+document.getElementById("headline").innerText = c.headline;
+document.getElementById("subheadline").innerText = c.sub;
+document.getElementById("ctaText").innerText = c.cta;
+document.getElementById("productsTitle").innerText = c.products;
+document.getElementById("aboutTitle").innerText = c.aboutTitle;
+document.getElementById("aboutText").innerText = c.about;
+
+const mainMsg = "https://wa.me/919106271850?text=" + encodeURIComponent(c.msg("garments"));
+document.getElementById("whatsappMain").href = mainMsg;
+document.getElementById("whatsappHeader").href = mainMsg;
+
+document.querySelectorAll(".productWA").forEach(btn=>{
+  btn.innerText = c.cta;
+  btn.href = "https://wa.me/919106271850?text=" +
+    encodeURIComponent(c.msg(btn.dataset.product));
+  btn.target="_blank";
+});
+</script>
+
+</body>
+</html>
